@@ -1,0 +1,53 @@
+.container{
+    text-align: center;
+}
+
+.title{
+    margin-top: 50px;
+    color: aquamarine;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span{
+    color: chartreuse;
+    margin-left: 20px;
+}
+
+.title span:hover{
+    transform: scale(1.2);
+}
+
+.reset-btn{
+    width:200px;
+    height:48px;
+    background:#ff7f50;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.boxes{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border:6px solid #0f1b21;
+    background-color: lightgray;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 560px;
+    margin: auto;
+}
