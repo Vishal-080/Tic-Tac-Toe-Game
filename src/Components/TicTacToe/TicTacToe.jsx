@@ -1,11 +1,17 @@
 import React from 'react';
 import './TicTacToe.css';
-import circleIcon from '../Assets/circle.png';
+import CicleIcon from '../Assets/circle.png';
+import CrossIcon from '../Assets/cross.png';
 
-function TicTacToe() {
+
+const TicTacToe = () => {
   return (
-    <div>TicTacToe
-        <img src='${circleIcon}' alt='Cicrle'/>
+    <div className='container'>
+      <h1 className='title'>Tic-Tac-Toe Game in <span>React</span></h1>
+      <div className='board'>
+
+      </div>
+      <button className='reset-btn'>Reset</button>
     </div>
   )
 }
