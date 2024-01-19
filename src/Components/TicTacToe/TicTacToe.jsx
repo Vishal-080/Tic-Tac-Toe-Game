@@ -10,6 +10,18 @@ const TicTacToe = () => {
   let [lock, setLock] = useState(false);
   let titleRef = useRef(null);
 
+  let box1 = useRef(null);
+  let box2 = useRef(null);
+  let box3 = useRef(null);
+  let box4 = useRef(null);
+  let box5 = useRef(null);
+  let box6 = useRef(null);
+  let box7 = useRef(null);
+  let box8 = useRef(null);
+  let box9 = useRef(null);
+
+  let boxArr = [box1,box2,box3,box4,box5,box6,box7,box8,box9];
+
   const toggle = (e, num) => {
     if (lock) {
       return 0;
@@ -127,7 +139,7 @@ const TicTacToe = () => {
           ></div>
         </div>
       </div>
-      <button className="reset-btn">Reset</button>
+      <button className="reset-btn" onClick={()=>{reset()}}>Reset</button>
     </div>
   );
 };
