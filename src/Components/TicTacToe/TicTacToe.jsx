@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./TicTacToe.css";
 import CicleIcon from "../Assets/circle.png";
 import CrossIcon from "../Assets/cross.png";
@@ -11,6 +11,7 @@ const TicTacToe = () => {
 
   let [count,setCount] = useState(0);
   let [lock, setLock] = useState(false);
+  let titleRef = useRef(null);
 
   const toggle = (e,num) => {
 
@@ -59,11 +60,17 @@ const TicTacToe = () => {
 
   const won = (winner) => {
     setLock(true);
+    if(winner==="X"){
+      titleRef.current.innerHTML = `Congratulations : <img src=${CrossIcon}>`
+    }
+    else{
+      titleRef.current.innerHTML = `Congratulations : <img src=${CircleIcon}>`
+    }
   }
 
   return (
     <div className="container">
-      <h1 className="title">
+      <h1 className="title" ref={titleRef}>
         Tic-Tac-Toe Game in <span>React</span>
       </h1>
       <div className="board">
