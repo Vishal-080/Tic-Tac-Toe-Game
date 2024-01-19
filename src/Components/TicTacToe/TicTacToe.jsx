@@ -169,6 +169,8 @@ const TicTacToe = () => {
       >
         Reset
       </button>
+
+      <p>Made with love and React &#10084;</p>
     </div>
   );
 };
