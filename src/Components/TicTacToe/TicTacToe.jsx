@@ -55,6 +55,11 @@ const TicTacToe = () => {
     }
   };
 
+  const reset = () => {
+    setLock(false);
+    data = ["", "", "", "", "", "", "", "", ""];
+    titleRef.current.innerHTML = `Tic-Tac-Toe Game in <span>React</span>`
+  }
   return (
     <div className="container">
       <h1 className="title" ref={titleRef}>
